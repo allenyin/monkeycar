@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/bmi_parsers/!svn/ver/39/
+END
+centeroutTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bmi_parsers/!svn/ver/1/centeroutTask_parse.m
+END
+volitionalInhibition_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bmi_parsers/!svn/ver/18/volitionalInhibition_parse.m
+END
+fittsTask2_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/bmi_parsers/!svn/ver/1/fittsTask2_parse.m
+END
+analogCueReach_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bmi_parsers/!svn/ver/1/analogCueReach_parse.m
+END
+bmi_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/bmi_parsers/!svn/ver/38/bmi_parse.m
+END
+emg_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/bmi_parsers/!svn/ver/1/emg_parse.m
+END
+decompress_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/bmi_parsers/!svn/ver/29/decompress_file.m
+END
+stimulation_interval_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bmi_parsers/!svn/ver/1/stimulation_interval_parse.m
+END
+acquireTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bmi_parsers/!svn/ver/1/acquireTask_parse.m
+END
+multiDirectionTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bmi_parsers/!svn/ver/1/multiDirectionTask_parse.m
+END
+nearestpoint.m
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/bmi_parsers/!svn/ver/5/nearestpoint.m
+END
+plasticTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bmi_parsers/!svn/ver/37/plasticTask_parse.m
+END
+dealify.m
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/bmi_parsers/!svn/ver/5/dealify.m
+END
+t1_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/bmi_parsers/!svn/ver/1/t1_parse.m
+END
+t3_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/bmi_parsers/!svn/ver/1/t3_parse.m
+END
+common_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/bmi_parsers/!svn/ver/32/common_parse.m
+END
+trialify.m
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/bmi_parsers/!svn/ver/6/trialify.m
+END
+gradedFrequencyTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bmi_parsers/!svn/ver/20/gradedFrequencyTask_parse.m
+END
+textureRomo_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bmi_parsers/!svn/ver/35/textureRomo_parse.m
+END
+sensationFeedbackRandFreqB_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bmi_parsers/!svn/ver/26/sensationFeedbackRandFreqB_parse.m
+END
+d2r.m
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/bmi_parsers/!svn/ver/10/d2r.m
+END
+pursuitTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bmi_parsers/!svn/ver/1/pursuitTask_parse.m
+END
+sensationCue_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bmi_parsers/!svn/ver/1/sensationCue_parse.m
+END
+compress_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/bmi_parsers/!svn/ver/2/compress_file.m
+END
+basicTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/bmi_parsers/!svn/ver/4/basicTask_parse.m
+END
+bimanualCenterOutTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bmi_parsers/!svn/ver/1/bimanualCenterOutTask_parse.m
+END
+textureFeedback_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bmi_parsers/!svn/ver/28/textureFeedback_parse.m
+END
+sensationFeedback_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bmi_parsers/!svn/ver/29/sensationFeedback_parse.m
+END
+fittsTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/bmi_parsers/!svn/ver/1/fittsTask_parse.m
+END
+textureMatch_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bmi_parsers/!svn/ver/30/textureMatch_parse.m
+END
+sensationFeedbackSR_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bmi_parsers/!svn/ver/39/sensationFeedbackSR_parse.m
+END
+grapeTask_parse.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/bmi_parsers/!svn/ver/1/grapeTask_parse.m
+END
+spkwav_trans.m
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/bmi_parsers/!svn/ver/12/spkwav_trans.m
+END
