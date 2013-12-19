@@ -19,6 +19,7 @@ function [single_peth] = make_single_peth(bin_counts, event_onset, win, bin_time
         window_end_bin_index = find(window_end <= bin_times);
         window_end_bin_index = window_end_bin_index(1)-1;
 
+        
         single_peth = (single_peth.*(event-1) + bin_counts(1, window_start_bin_index:window_end_bin_index))./event;
         %single_peth = single_peth + bin_counts(1, window_start_bin_index:window_end_bin_index);
     end

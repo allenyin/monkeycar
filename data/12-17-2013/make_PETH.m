@@ -19,7 +19,7 @@ bin_size = 50; % msec
 [bin_counts, good_neurons] = binning(spike_data, bin_size);
 bin_times = (0:length(bin_counts)).*(bin_size/1000);  % bin_times in sec
 
-win = [-1, 3]; % window in sec, relative to event onset
+win = [-3, 3]; % window in sec, relative to event onset
 
 % make lists of event onset times, in sec
 forward = []; backward = [];
@@ -32,6 +32,10 @@ for i=1:length(TaskLog.target_x)
     end
 end
 
+% subtract the timestep difference from the event-onset
+forward = forward - TaskLog.wireless_timestamp(1, 2);
+backward = backward - TaskLog.wireless_timestamp(1,2);
+
 % average spike_data of each neurons over ALL events
 forward_PETH = zeros(size(bin_counts,1), (win(2)-win(1))/(bin_size/1000));
 backward_PETH = zeros(size(bin_counts,1), (win(2)-win(1))/(bin_size/1000));
@@ -42,25 +46,34 @@ for neuron=1:size(bin_counts,1)
 end
 
 % x-axis time...bin starting times
-win_times = -1:bin_size/1000:3;
+win_times = win(1):bin_size/1000:win(2);
 
-% plot overall PETH
-figure;
-%bar(win_times(1:end-1), mean(forward_PETH, 1), 'BarWidth', 1);
-bar(win_times(1:end-1), sum(forward_PETH, 1), 'BarWidth', 1);
-title('Forward PETH overall');
-
-figure;
-%bar(win_times(1:end-1), mean(backward_PETH, 1), 'BarWidth', 1);
-bar(win_times(1:end-1), sum(backward_PETH, 1), 'BarWidth', 1);
-title('Backward PETH overall');
+% subtract the mean from the single-neuron trial-average
+for i=1:size(forward_PETH,1)
+    forward_PETH(i,:) = forward_PETH(i,:) - mean(forward_PETH(i,:));
+    backward_PETH(i,:) = backward_PETH(i,:) - mean(backward_PETH(i,:));
+end
 
 % plot all the forward single neuron PETH
 for neuron=1:size(bin_counts,1)
     figure;
-    bar(win_times(1:end-1), forward_PETH(neuron,:));
+    bar(win_times(1:end-1), abs(forward_PETH(neuron,:)));
     title(strcat('Forward PETH for neuron ', num2str(good_neurons(neuron))));
 end
+
+% plot overall PETH
+figure;
+%bar(win_times(1:end-1), mean(forward_PETH, 1), 'BarWidth', 1);
+%bar(win_times(1:end-1), sum(forward_PETH, 1), 'BarWidth', 1);
+bar(win_times(1:end-1), sum(abs(forward_PETH),1), 'Barwidth', 1);
+title('Forward PETH overall');
+
+figure;
+%bar(win_times(1:end-1), mean(backward_PETH, 1), 'BarWidth', 1);
+%bar(win_times(1:end-1), sum(backward_PETH, 1), 'BarWidth', 1);
+bar(win_times(1:end-1), sum(abs(backward_PETH),1), 'Barwidth', 1);
+title('Backward PETH overall');
+
 
 % normalized over minimum activation
 %figure;
